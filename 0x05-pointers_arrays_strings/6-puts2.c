@@ -1,24 +1,18 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- * puts2 - prints one char out of 2
- * @str: type
- *
+ * puts2 - check the code for Holberton School students.
+ * @str: pointer int type
+ * Return: Always 0.
  */
-
 void puts2(char *str)
 {
-	int i, j = 0;
-
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-
-	while (j < i)
-	{
-		_putchar(str[j]);
-		j = j + 2;
-	}
-	_putchar('\n');
+int i;
+for (i = 0; *str != '\0'; i++)
+{
+if (i % 2 == 0)
+_putchar(*str);
+str++;
+}
+_putchar('\n');
 }
